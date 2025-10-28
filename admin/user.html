@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star8flx Media - User Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="user-bg dark">
+  <div class="user-flex-col user-min-h-screen">
+      <header class="py-3">
+  <div class="container px-3 px-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img"/>
+      </a>
+
+      <button class="navbar-toggler ms-auto toggler-space" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse nav-space justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
+          <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
+          <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+    </header>
+    <main class="user-flex-grow">
+      <div class="user-container">
+        <div class="user-flex user-flex-col-md-row user-gap-4 user-mb-8">
+          <h1 class="user-text-3xl user-font-bold">User Management</h1>
+          <button class="user-btn-add">
+            <span class="material-symbols-outlined">add</span>
+            <span>Add User</span>
+          </button>
+        </div>
+
+        <div class="user-mb-6">
+          <div class="user-relative">
+            <span class="material-symbols-outlined user-search-icon">search</span>
+            <input type="text" placeholder="Search users by name, email..." class="user-search-input"/>
+          </div>
+        </div>
+
+        <div class="user-table-container">
+          <table class="user-table">
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Email</th>
+                <th class="user-text-center">Subscription</th>
+                <th class="user-text-center">Status</th>
+                <th class="user-text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                <td>
+                  <div class="user-flex user-items-center user-gap-4">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCelkFAafpl5XYigoEbA1PXuIBDnaiymYFdtzoc1XDGRI1WgdVzWUb-dnlMYdBAxXTvknpPRmL0OoJCnpnPnQSaHJllQHtb5ewvvZf8v07WRtBeeKpjdm84D1ume67t1Y6ZNdvBX_u1W2VYr8FehpXuLcJBpQ1qKWgj4-fsi9DSMzbiQPa6j2bJytPO1Sfz861RbsIcBLHbgX6RHul73PiA7strmvTR2wWhN5dDR-j55lqmNr_cDAZOUIVWGT4IC1h24Ti7M1ISiUw" alt="Sophia Bennett's avatar" class="user-avatar-img"/>
+                    <span class="user-font-medium">Sophia Bennett</span>
+                  </div>
+                </td>
+                <td class="user-text-variant">sophia.bennett@email.com</td>
+                <td class="user-text-center"><span class="user-badge-premium">Premium</span></td>
+                <td class="user-text-center"><span class="user-badge-active">Active</span></td>
+                <td class="user-text-right"><button class="user-btn-more"><span class="material-symbols-outlined">more_horiz</span></button></td>
+              </tr>
+          
+              <tr>
+                <td>
+                  <div class="user-flex user-items-center user-gap-4">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Gq54YM_1SWVsSwephgs8i9EFP-K4VYRdwCOAHdLUNv9KdGZouZaEQKHQMlql-bGZo3wi1IxWxbxUPFiDT-B0IVcJ_y8ojjG9kOF-P5NbyO4kfY65CEaVM7CSztmpLzVqzAizvY9MonVAwcRZsBNQr0iSY6YMtOMbtpgXlhy3REKLZXM-QwPLd38w7Rz5oS3XzR7tfqqIU280enJiNvRBlcF3eYmsko5ruXdxvYaiHOduGuW2thzN8Mk4GwDpviB46I1EYmdqTK4" alt="Ethan Carter's avatar" class="user-avatar-img"/>
+                    <span class="user-font-medium">Ethan Carter</span>
+                  </div>
+                </td>
+                <td class="user-text-variant">ethan.carter@email.com</td>
+                <td class="user-text-center"><span class="user-badge-basic">Basic</span></td>
+                <td class="user-text-center"><span class="user-badge-active">Active</span></td>
+                <td class="user-text-right"><button class="user-btn-more"><span class="material-symbols-outlined">more_horiz</span></button></td>
+              </tr>
+           
+              <tr>
+                <td>
+                  <div class="user-flex user-items-center user-gap-4">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdOYRy9zPKDXEFdunLSKN8nAMegttwPGy6Li6FnBlaZs6eR38Ho7XC_sXejAKoZD8GOKId-ctbLmOJAByfgrZlrEcCRT6ziXe7L2nKplebYRnXCj4GV13tsaZxS_1mswTtIiEN1AJWiL4HBxFwMNcPA0t3MgcpEmv4XvCOAbXBhZNlY-Q0CO_psGAKp9iWimCM_3VyFhyH1lgjNwFkjOevxr7EfGgGxo16Cwi5LKxWIlRThBs94H_nsV_wJ-HRO8luIWR7RNGXnTk" alt="Olivia Davis's avatar" class="user-avatar-img"/>
+                    <span class="user-font-medium">Olivia Davis</span>
+                  </div>
+                </td>
+                <td class="user-text-variant">olivia.davis@email.com</td>
+                <td class="user-text-center"><span class="user-badge-premium">Premium</span></td>
+                <td class="user-text-center"><span class="user-badge-active">Active</span></td>
+                <td class="user-text-right"><button class="user-btn-more"><span class="material-symbols-outlined">more_horiz</span></button></td>
+              </tr>
+            
+              <tr>
+                <td>
+                  <div class="user-flex user-items-center user-gap-4">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0KpBPzbrWkVAjq_cPba6cl6InGWph-4moKmRg389vzGZUlVHShPcAXu8EPKjmFOxS3IfY1fE5-3d32jr65x6GLOEvAVwZN0lv0m5XAOVwdkirRtGC7nc3gIYpg7gZvJ6IFxZuqatsi1Ah8HeL3APbX-47U9kB1hafxstogHlclQ55A5Q_Dj19ZSTtvpW0aMUnnbn3uznPU56tCxSXhsXYgzGxPIS2mPdCNkVXw44pHOIxfkSLKK2RRJypWf2gpx6SgiNMOwAVTB0" alt="Liam Foster's avatar" class="user-avatar-img"/>
+                    <span class="user-font-medium">Liam Foster</span>
+                  </div>
+                </td>
+                <td class="user-text-variant">liam.foster@email.com</td>
+                <td class="user-text-center"><span class="user-badge-basic">Basic</span></td>
+                <td class="user-text-center"><span class="user-badge-inactive">Inactive</span></td>
+                <td class="user-text-right"><button class="user-btn-more"><span class="material-symbols-outlined">more_horiz</span></button></td>
+              </tr>
+        
+              <tr>
+                <td>
+                  <div class="user-flex user-items-center user-gap-4">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHq8SshpmYG_Us87E-Fdu7N3tYE9Iclmw1ur4h6qoV_5y3DrpLRkN8_rE-68qqvgZWcmtgIjffxACMIBmgW0Tp7gPvRDNJ1VTWUyAdpcELrTTAOwCgznGXGBjTMe86V9KpvaFXCe9-o9-L1paHoywjZjlL8qnEaLHBma3RiG4H39pGpmt-P0Ll1333Bfx62X8ixtTZwOAB6_oblrQPsloBa8qThIusj_nUWhdK6RUrGVHzz6clbGTS9JGgZ6g8TDz99KdlVsbOrBo" alt="Ava Green's avatar" class="user-avatar-img"/>
+                    <span class="user-font-medium">Ava Green</span>
+                  </div>
+                </td>
+                <td class="user-text-variant">ava.green@email.com</td>
+                <td class="user-text-center"><span class="user-badge-premium">Premium</span></td>
+                <td class="user-text-center"><span class="user-badge-active">Active</span></td>
+                <td class="user-text-right"><button class="user-btn-more"><span class="material-symbols-outlined">more_horiz</span></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="user-pagination">
+          <span>Showing 1 to 5 of 20 results</span>
+          <div class="user-pagination-buttons">
+            <button class="user-page-btn">Previous</button>
+            <button class="user-page-btn user-page-btn-active">1</button>
+            <button class="user-page-btn">2</button>
+            <button class="user-page-btn">3</button>
+            <button class="user-page-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </main>
+       <footer class="footer mt-4">
+  <div class="container-fluid py-4 px-4 ">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center ">
+        <div class="service-logo">
+          <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="small text-light">Home</a>
+        <a href="#" class="small text-light">Services</a>
+        <a href="#" class="small text-light">Portfolio</a>
+        <a href="#" class="small text-light">About</a>
+        <a href="#" class="small text-light">Contact</a>
+      </div>
+      <div class="d-flex gap-3 justify-content-center">
+        <a href="#" class="text-white"><i class="bi bi-twitter" style="font-size:1.125rem;"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram" style="font-size:1.125rem;"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-facebook" style="font-size:1.125rem;"></i></a>
+      </div>
+    </div>
+    <div class="text-center small muted mt-3 pt-3 border-top footer-line">
+      <p class="mb-0">© 2024 Star8flx Media. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</body>
+</html>

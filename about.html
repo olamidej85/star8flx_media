@@ -4,148 +4,169 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Star8flx Media - About Us</title>
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your existing site CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-     <header class="py-3">
-  <div class="container px-3 px-lg-0">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img"/>
-      </a>
+<body class="dark">
 
-      <button class="navbar-toggler ms-auto toggler-space" type="button" 
-        data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="layout-wrapper">
+    <!-- SIDEBAR (use your existing sidebar styling) -->
+    <aside class="sidebar">
+      <div>
+        <div class="service-logo">
+          <div class="service-avatar">
+            <div class="d-flex align-items-center">
+              <div class="service-logo pb-5">
+                <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="collapse navbar-collapse nav-space justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
-        </ul>
+        <nav class="mb-3">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">movie</span> Content</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">analytics</span> Analytics</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">monetization_on</span> Monetization</a>
+          <a href="#" class="nav-link active"><span class="material-symbols-outlined">info</span> About Us</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">settings</span> Settings</a>
+        </nav>
       </div>
-    </nav>
+
+      <div>
+        <button class="upload-btn mb-3">
+          <span class="material-symbols-outlined">upload</span> New Upload
+        </button>
+
+        <div class="help-links">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">help</span> Help & Feedback</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">source</span> Creator Resources</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="about-main">
+      <div class="container">
+        <h2 class="fw-bold display-6 text-white">About Star8flx Media</h2>
+        <p class="mt-4 fs-5 text-light opacity-75">
+          Star8flx Media is a dynamic video production and streaming company dedicated to crafting compelling visual narratives.
+          Our journey began with a simple vision: to transform ideas into impactful stories that resonate with audiences worldwide.
+          With a passion for creativity and innovation, we've grown into a team of skilled professionals committed to excellence
+          in every project we undertake.
+        </p>
+      </div>
+
+      <section class="section-light py-5">
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-md-4">
+              <h3 class="fw-bold text-white">Our Mission</h3>
+              <p class="text-light opacity-75">
+                To empower brands and individuals with the tools to effectively communicate their message through high-quality video content.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="fw-bold text-white">Our Vision</h3>
+              <p class="text-light opacity-75">
+                To be a recognized leader in the video production industry, known for our innovative approach and creative storytelling.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="fw-bold text-white">Our Values</h3>
+              <p class="text-light opacity-75">
+                Creativity, integrity, collaboration, and a relentless pursuit of excellence guide everything we do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold display-6 text-white">Meet the Team</h2>
+          <p class="mt-3 fs-5 text-light opacity-75">
+            Our team is composed of talented individuals with diverse backgrounds and expertise in video production, streaming, and digital media.
+            We are united by a shared passion for storytelling.
+          </p>
+
+          <div class="row mt-5 g-5 justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+              <div class="d-flex flex-column align-items-center">
+                <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuATTlfuAq3CL8TO9SWR1wTkuUyQIbYV9_8CsartENs-GelZv1s_jkbQY2qIpVX-JN-GFQphzyuJwpN-AdFWaRYvQsbRJh__UYSspO58uEJoK5QWMf20fk_J3spO6B6g4pzw1cSdjqjmxdru-v1oRbUaBRVqavENQuHeEYbfnGn0LPe0w0LRWNJQw2nmaNHvoQSVBrCBs24X9kds4x4CfukjBoSgiYCl2TYt4XTMXm225q0o2egKcQMhSwlrPsC847G6mlR6PXlibdA');"></div>
+                <h5 class="mt-4 fw-bold text-white">Ethan Carter</h5>
+                <p class="text-primary-custom">CEO & Creative Director</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="d-flex flex-column align-items-center">
+                <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWRXo0NfIUNdyAr5-LzJmTVe6OkoaPApFjArRFNeUlUZkX1Y7ttN6_GVQtSfvhEvbWl3Yn2tnacU55AMcK8YIiN1_Ci8lrljjfwwiDPJdPUKCSA14MhHVRQn5fgPYdEXeJ0wxCt5xazjYlD4Nxj6IxZmBgBt1fwtikoz9vFFscWteo-iE1CtHTvgDO5gbredfkaJPUdYC0uKOQZrx_5mJ5xLU4aW5mOuERBydjmE01XC6sDKD17PZrLIFNedtJgBA0CBVkDiokbh0');"></div>
+                <h5 class="mt-4 fw-bold text-white">Sophia Bennett</h5>
+                <p class="text-primary-custom">Head of Production</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="d-flex flex-column align-items-center">
+                <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuXbZ-DZ-obcYkf8MQ-abCGxVQ1xriy8kkciC_0bMSOQ0-fY3e3-M8h9XBLnrzU9FLU4J6qKGXZ8Nm7xpl5KC2ELWVqHNhBlbEkOdSYMtB84eWeolnVw66CS8-UeQPaoSVq8nDXH5qUDRwFsjmKHNV1_My6RMEybplkpYkpI2tTibIVrCRIQio93ifG0fk1NlpMb5gtQSrD-bhKur_4CavCpDrzprVCF-HOcq9klyBdjBmTxa_iYS2ts1wZyPHISErZtec5lVB0_E');"></div>
+                <h5 class="mt-4 fw-bold text-white">Liam Harper</h5>
+                <p class="text-primary-custom">Lead Editor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-light py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold display-6 text-white">Ready to Tell Your Story?</h2>
+          <p class="mt-3 fs-5 text-light opacity-75">
+            Let's create something amazing together. Explore our services or contact us to start your project.
+          </p>
+          <button class="btn btn-primary-custom fw-bold px-4 py-2 mt-3">Explore Our Services</button>
+        </div>
+      </section>
+    </main>
   </div>
-    </header>
-    <div class="container">
-      <h2 class="fw-bold display-6 text-white">About Star8flx Media</h2>
-      <p class="mt-4 fs-5 text-light opacity-75">
-        Star8flx Media is a dynamic video production and streaming company dedicated to crafting compelling visual narratives.
-        Our journey began with a simple vision: to transform ideas into impactful stories that resonate with audiences worldwide.
-        With a passion for creativity and innovation, we've grown into a team of skilled professionals committed to excellence
-        in every project we undertake.
-      </p>
-    </div>
-  </section>
-  <section class="section-light py-5">
-    <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-md-4">
-          <h3 class="fw-bold text-white">Our Mission</h3>
-          <p class="text-light opacity-75">
-            To empower brands and individuals with the tools to effectively communicate their message through high-quality video content.
-          </p>
+
+  <!-- FOOTER (already styled in your CSS) -->
+  <footer class="mt-4">
+    <div class="container max-w-7xl px-3 px-lg-0 py-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <div class="service-logo">
+            <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3 class="fw-bold text-white">Our Vision</h3>
-          <p class="text-light opacity-75">
-            To be a recognized leader in the video production industry, known for our innovative approach and creative storytelling.
-          </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#" class="small text-light">Home</a>
+          <a href="#" class="small text-light">Services</a>
+          <a href="#" class="small text-light">Portfolio</a>
+          <a href="#" class="small text-light">About</a>
+          <a href="#" class="small text-light">Contact</a>
         </div>
-        <div class="col-md-4">
-          <h3 class="fw-bold text-white">Our Values</h3>
-          <p class="text-light opacity-75">
-            Creativity, integrity, collaboration, and a relentless pursuit of excellence guide everything we do.
-          </p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="text-white"><i class="bi bi-twitter" style="font-size:1.125rem;"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram" style="font-size:1.125rem;"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook" style="font-size:1.125rem;"></i></a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Team Section -->
-  <section class="py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold display-6 text-white">Meet the Team</h2>
-      <p class="mt-3 fs-5 text-light opacity-75">
-        Our team is composed of talented individuals with diverse backgrounds and expertise in video production, streaming, and digital media.
-        We are united by a shared passion for storytelling.
-      </p>
-
-      <div class="row mt-5 g-5 justify-content-center">
-        <div class="col-sm-6 col-lg-4">
-          <div class="d-flex flex-column align-items-center">
-            <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuATTlfuAq3CL8TO9SWR1wTkuUyQIbYV9_8CsartENs-GelZv1s_jkbQY2qIpVX-JN-GFQphzyuJwpN-AdFWaRYvQsbRJh__UYSspO58uEJoK5QWMf20fk_J3spO6B6g4pzw1cSdjqjmxdru-v1oRbUaBRVqavENQuHeEYbfnGn0LPe0w0LRWNJQw2nmaNHvoQSVBrCBs24X9kds4x4CfukjBoSgiYCl2TYt4XTMXm225q0o2egKcQMhSwlrPsC847G6mlR6PXlibdA');"></div>
-            <h5 class="mt-4 fw-bold text-white">Ethan Carter</h5>
-            <p class="text-primary-custom">CEO & Creative Director</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="d-flex flex-column align-items-center">
-            <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWRXo0NfIUNdyAr5-LzJmTVe6OkoaPApFjArRFNeUlUZkX1Y7ttN6_GVQtSfvhEvbWl3Yn2tnacU55AMcK8YIiN1_Ci8lrljjfwwiDPJdPUKCSA14MhHVRQn5fgPYdEXeJ0wxCt5xazjYlD4Nxj6IxZmBgBt1fwtikoz9vFFscWteo-iE1CtHTvgDO5gbredfkaJPUdYC0uKOQZrx_5mJ5xLU4aW5mOuERBydjmE01XC6sDKD17PZrLIFNedtJgBA0CBVkDiokbh0');"></div>
-            <h5 class="mt-4 fw-bold text-white">Sophia Bennett</h5>
-            <p class="text-primary-custom">Head of Production</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="d-flex flex-column align-items-center">
-            <div class="team-img" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuXbZ-DZ-obcYkf8MQ-abCGxVQ1xriy8kkciC_0bMSOQ0-fY3e3-M8h9XBLnrzU9FLU4J6qKGXZ8Nm7xpl5KC2ELWVqHNhBlbEkOdSYMtB84eWeolnVw66CS8-UeQPaoSVq8nDXH5qUDRwFsjmKHNV1_My6RMEybplkpYkpI2tTibIVrCRIQio93ifG0fk1NlpMb5gtQSrD-bhKur_4CavCpDrzprVCF-HOcq9klyBdjBmTxa_iYS2ts1wZyPHISErZtec5lVB0_E');"></div>
-            <h5 class="mt-4 fw-bold text-white">Liam Harper</h5>
-            <p class="text-primary-custom">Lead Editor</p>
-          </div>
-        </div>
+      <div class="text-center small muted mt-3 pt-3 border-top" style="border-color: rgba(13,166,242,0.08) !important;">
+        <p class="mb-0">© 2024 Star8flx Media. All rights reserved.</p>
       </div>
     </div>
-  </section>
-  <section class="section-light py-5 text-center">
-    <div class="container">
-      <h2 class="fw-bold display-6 text-white">Ready to Tell Your Story?</h2>
-      <p class="mt-3 fs-5 text-light opacity-75">
-        Let's create something amazing together. Explore our services or contact us to start your project.
-      </p>
-      <button class="btn btn-primary-custom fw-bold px-4 py-2 mt-3">Explore Our Services</button>
-    </div>
-  </section>
-     <footer class="mt-4">
-      <div class="container max-w-7xl px-3 px-lg-0 py-4">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-           <div class="d-flex align-items-center gap-2">
-  <div class="service-logo">
-    <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
-  </div>
-</div>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="#" class="small text-light">Home</a>
-            <a href="#" class="small text-light">Services</a>
-            <a href="#" class="small text-light">Portfolio</a>
-            <a href="#" class="small text-light">About</a>
-            <a href="#" class="small text-light">Contact</a>
-          </div>
+  </footer>
 
-          <div class="d-flex gap-3 justify-content-center">
-            <a href="#" class="text-white"><i class="bi bi-twitter" style="font-size:1.125rem;"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-instagram" style="font-size:1.125rem;"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-facebook" style="font-size:1.125rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="text-center small muted mt-3 pt-3 border-top" style="border-color: rgba(13,166,242,0.08) !important;">
-          <p class="mb-0">© 2024 Star8flx Media. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

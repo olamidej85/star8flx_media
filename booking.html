@@ -5,51 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Star8flx Media Booking</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
 
 <body>
-  <div class="d-flex min-vh-100 flex-column">
-   
-    <header class="py-3">
-  <div class="container max-w-7xl px-3 px-lg-0">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="d-flex align-items-center gap-2">
-  <div class="service-logo">
-    <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
-  </div>
-</div>
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <div class="layout-wrapper">
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
-        </ul>
+    <!-- SIDEBAR (your existing sidebar styles apply) -->
+    <aside class="sidebar">
+      <div>
+        <div class="service-logo">
+          <div class="service-avatar">
+            <div class="d-flex align-items-center">
+              <div class="service-logo pb-5">
+                <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="mb-3">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">movie</span> Content</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">analytics</span> Analytics</a>
+          <a href="#" class="nav-link active"><span class="material-symbols-outlined">calendar_month</span> Booking</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">monetization_on</span> Monetization</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">settings</span> Settings</a>
+        </nav>
       </div>
 
-      
-    </nav>
-  </div>
-</header>
-    <main class="flex-grow">
+      <div>
+        <button class="upload-btn mb-3">
+          <span class="material-symbols-outlined">upload</span> New Upload
+        </button>
+
+        <div class="help-links">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">help</span> Help & Feedback</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">source</span> Creator Resources</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN BOOKING CONTENT -->
+    <main class="booking-main flex-grow">
+      <header class="py-3">
+        <div class="container max-w-7xl px-3 px-lg-0">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="d-flex align-items-center gap-2">
+              <div class="service-logo">
+                <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+              </div>
+            </div>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
+                <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
+                <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
       <div class="container container-lg-max px-4 py-5">
         <div class="mx-auto" style="max-width: 1100px;">
           <div class="row g-5">
+            <!-- Booking Form -->
             <div class="col-12 col-lg-6">
               <h2 class="h3 fw-bold mb-4">Book Our Services</h2>
-
               <form class="mb-4">
                 <div class="mb-3">
                   <label for="service" class="form-label text-white opacity-85">Select Service</label>
@@ -66,13 +104,16 @@
                 </div>
                 <div class="mb-3">
                   <label for="details" class="form-label text-white opacity-85">Additional Details</label>
-                  <textarea id="details" name="details" rows="4" class="form-control" placeholder="Provide any additional details or requirements"></textarea>
+                  <textarea id="details" name="details" rows="4" class="form-control"
+                    placeholder="Provide any additional details or requirements"></textarea>
                 </div>
                 <div>
                   <button type="submit" class="btn btn-primary-soft w-100 py-3">Add to Cart</button>
                 </div>
               </form>
             </div>
+
+            <!-- Cart Panel -->
             <div class="col-12 col-lg-6">
               <div class="cart-panel">
                 <h2 class="h3 fw-bold mb-4">Shopping Cart</h2>
@@ -105,11 +146,11 @@
                   <button class="btn btn-pay w-100 py-3 mb-3">Proceed to Payment</button>
 
                   <div class="d-flex justify-content-center">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMng_2HwAe4s9AH5W6LlhEi13Y-6h39OWQ1IF5dchehNFGTTXWPNbvqN7-ArJyAvynLgLKPT4vRmm2ZTnjoNX3qhpbpdHTqHIGVtzRep9N5slyQA4I30hzP1jgSWWiQi3q6Z8Fum7hGsyYDY1zgDN6-BsTQW3GXCJZ4OqK3tLkLPHPjdBAIPB9aTEU_dalXLwry6ZX-dVsq7refCRNQP25C0X6CCM9aZAHzETp-jirEPXq-w4yrQVFXBmArxxD1zATWmtlxkuhvI0"
-                         alt="PayPal" style="height:24px; opacity:.8;">
+                    <img
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMng_2HwAe4s9AH5W6LlhEi13Y-6h39OWQ1IF5dchehNFGTTXWPNbvqN7-ArJyAvynLgLKPT4vRmm2ZTnjoNX3qhpbpdHTqHIGVtzRep9N5slyQA4I30hzP1jgSWWiQi3q6Z8Fum7hGsyYDY1zgDN6-BsTQW3GXCJZ4OqK3tLkLPHPjdBAIPB9aTEU_dalXLwry6ZX-dVsq7refCRNQP25C0X6CCM9aZAHzETp-jirEPXq-w4yrQVFXBmArxxD1zATWmtlxkuhvI0"
+                      alt="PayPal" style="height:24px; opacity:.8;">
                   </div>
                 </div>
-
               </div>
             </div> 
           </div> 
@@ -117,34 +158,37 @@
       </div> 
     </main>
   </div>
-   <footer class="mt-4">
-      <div class="container max-w-7xl px-3 px-lg-0 py-4">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-           <div class="d-flex align-items-center gap-2">
-  <div class="service-logo">
-    <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
-  </div>
-</div>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a href="#" class="small text-light">Home</a>
-            <a href="#" class="small text-light">Services</a>
-            <a href="#" class="small text-light">Portfolio</a>
-            <a href="#" class="small text-light">About</a>
-            <a href="#" class="small text-light">Contact</a>
-          </div>
 
-          <div class="d-flex gap-3 justify-content-center">
-            <a href="#" class="text-white"><i class="bi bi-twitter" style="font-size:1.125rem;"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-instagram" style="font-size:1.125rem;"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-facebook" style="font-size:1.125rem;"></i></a>
+  <!-- FOOTER BELOW BOTH SIDEBAR & BODY -->
+  <footer class="mt-4">
+    <div class="container max-w-7xl px-3 px-lg-0 py-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <div class="service-logo">
+            <img src="images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
           </div>
         </div>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#" class="small text-light">Home</a>
+          <a href="#" class="small text-light">Services</a>
+          <a href="#" class="small text-light">Portfolio</a>
+          <a href="#" class="small text-light">About</a>
+          <a href="#" class="small text-light">Contact</a>
+        </div>
 
-        <div class="text-center small muted mt-3 pt-3 border-top" style="border-color: rgba(13,166,242,0.08) !important;">
-          <p class="mb-0">© 2024 Star8flx Media. All rights reserved.</p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="text-white"><i class="bi bi-twitter" style="font-size:1.125rem;"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-instagram" style="font-size:1.125rem;"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook" style="font-size:1.125rem;"></i></a>
         </div>
       </div>
-    </footer>
+
+      <div class="text-center small muted mt-3 pt-3 border-top" style="border-color: rgba(13,166,242,0.08) !important;">
+        <p class="mb-0">© 2024 Star8flx Media. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

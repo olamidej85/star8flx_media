@@ -326,7 +326,7 @@ header .navbar {
       box-shadow: 0 0 15px rgba(13, 166, 242, 0.2);
     }
 
-    
+      
   .login-card {
     background-color: #1a2a33;
     border-radius: 0.75rem;
@@ -823,6 +823,7 @@ header .navbar {
       color: #fff;
       font-weight:600;
     }
+    
     .upload-btn{
       width:100%;
       display:flex;
@@ -1175,6 +1176,34 @@ header .navbar {
       .media-links-grid a:hover {
         background-color: var(--primary);
         color: #fff;
+      }
+       .layout-wrapper {
+        display: flex;
+        min-height: calc(100vh - 100px); 
+      }
+
+      .media-main {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1.5rem;
+      }
+
+      .media-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .media-footer {
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: 0;
+      }
+
+      @media (max-width: 768px) {
+        .layout-wrapper {
+          flex-direction: column;
+        }
       }
 .report {
   --color-primary: #0da6f2;

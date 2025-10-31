@@ -3,80 +3,145 @@
 <head>
 <meta charset="utf-8"/>
 <title>Star8flx Media - Subscription Management</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css"/>
+
+<style>
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content-area {
+    display: flex;
+    flex: 1;
+  }
+
+  .sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    width: 100%;
+    margin-top: auto;
+  }
+</style>
 </head>
+
 <body class="sub-body">
-<div class="sub-container">
-  <header class="py-3">
-      <div class="container px-3 px-lg-0">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img"/>
-          </a>
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav text-center">
-              <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
-              <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
-              <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
-              <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
-            </ul>
-          </div>
+  <div class="layout">
+    <div class="content-area">
+     <aside class="sidebar">
+      <div>
+        <div class="service-logo">
+        <div class="service-avatar">
+           <div class="d-flex align-items-center ">
+        <div class="service-logo pb-5">
+          <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img" />
+        </div>
+      </div>
+        </div>
+      </div>
+        <nav class="mb-3">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">dashboard</span> Dashboard</a>
+          <a href="#" class="nav-link active"><span class="material-symbols-outlined">movie</span> Content</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">analytics</span> Analytics</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">monetization_on</span> Monetization</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">settings</span> Settings</a>
         </nav>
       </div>
-    </header>
-  <main class="sub-main">
-    <div class="sub-main-inner">
-      <div class="sub-title-section">
-        <h1>Subscription Management</h1>
-        <p>Manage your plan and billing details.</p>
-      </div>
-      <div class="sub-card">
-        <div class="sub-current-plan">
-          <div class="sub-icon">
-            <span class="material-symbols-outlined">subscriptions</span>
-          </div>
-          <div>
-            <h2>Current Plan: Premium</h2>
-            <p>Billed Monthly</p>
-          </div>
+
+      <div>
+        <button class="upload-btn mb-3"><span class="material-symbols-outlined">upload</span> New Upload</button>
+
+        <div class="help-links">
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">help</span> Help & Feedback</a>
+          <a href="#" class="nav-link"><span class="material-symbols-outlined">source</span> Creator Resources</a>
         </div>
-        <div class="sub-billing-info">
-          <div class="sub-row">
-            <p>Billing Cycle</p>
-            <p>Monthly</p>
+      </div>
+    </aside>
+      <div class="main-content">
+        <header class="py-3">
+          <div class="container px-3 px-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="/images/mag.png" alt="Star8flx Media Logo" class="logo-img"/>
+              </a>
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">Live Streaming</a></li>
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">Video Production</a></li>
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">Portfolio</a></li>
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link text-light small" href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <div class="sub-row">
-            <p>Renewal Date</p>
-            <p>July 15, 2024</p>
-          </div>
-          <div class="sub-row">
-            <p>Payment Method</p>
-            <div class="sub-payment-method">
-              <svg class="sub-card-icon" fill="none" viewBox="0 0 1024 350" xmlns="http://www.w3.org/2000/svg">
-              </svg>
-              <p>•••• 1234</p>
+        </header>
+
+        <main class="sub-main flex-grow-1">
+          <div class="sub-main-inner container py-4">
+            <div class="sub-title-section text-center mb-4">
+              <h1>Subscription Management</h1>
+              <p>Manage your plan and billing details.</p>
+            </div>
+            <div class="sub-card mx-auto" style="max-width: 700px;">
+              <div class="sub-current-plan d-flex align-items-center gap-3 mb-4">
+                <div class="sub-icon">
+                  <span class="material-symbols-outlined">subscriptions</span>
+                </div>
+                <div>
+                  <h2>Current Plan: Premium</h2>
+                  <p>Billed Monthly</p>
+                </div>
+              </div>
+              <div class="sub-billing-info">
+                <div class="sub-row d-flex justify-content-between">
+                  <p>Billing Cycle</p>
+                  <p>Monthly</p>
+                </div>
+                <div class="sub-row d-flex justify-content-between">
+                  <p>Renewal Date</p>
+                  <p>July 15, 2024</p>
+                </div>
+                <div class="sub-row d-flex justify-content-between align-items-center">
+                  <p>Payment Method</p>
+                  <div class="sub-payment-method d-flex align-items-center gap-2">
+                    <svg class="sub-card-icon" fill="none" viewBox="0 0 1024 350" xmlns="http://www.w3.org/2000/svg"></svg>
+                    <p>•••• 1234</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-manage-buttons d-flex justify-content-center gap-3 mt-4">
+                <button class="sub-upgrade btn btn-info text-white">Upgrade Plan</button>
+                <button class="sub-downgrade btn btn-outline-light">Downgrade Plan</button>
+                <button class="sub-cancel btn btn-outline-danger">Cancel Subscription</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="sub-manage-buttons">
-          <button class="sub-upgrade">Upgrade Plan</button>
-          <button class="sub-downgrade">Downgrade Plan</button>
-          <button class="sub-cancel">Cancel Subscription</button>
-        </div>
+        </main>
       </div>
     </div>
-  </main>
-  <footer class="mt-4">
+    <footer class="mt-4">
       <div class="container py-4">
         <div class="d-flex flex-column flex-md-row justify-content-around align-items-center text-center gap-4">
           <div class="d-flex align-items-center gap-2">
@@ -100,7 +165,8 @@
         </div>
       </div>
     </footer>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</div>
 </body>
 </html>
